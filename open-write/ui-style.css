@@ -1,0 +1,27 @@
+.KVCWrite {
+	--WKCBorderStyle: 1px solid #ddd;
+	
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 9pt;
+
+	background: var(--KVCCommonBackground);
+	color: var(--KVCCommonForeground);
+}
+
+.KVCWriteStorageToolbar {
+	border-top: var(--WKCBorderStyle);
+	
+	background: var(--KVCCommonBackground);
+
+	/* AppContainerFlexbox:Child */
+	flex-shrink: 0;
+}
+
+@media screen and (max-width: 760px) {
+
+.KVCWriteViewportFooter {
+	/* browser quirks */
+	z-index: 999;
+}
+
+}
