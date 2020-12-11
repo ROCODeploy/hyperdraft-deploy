@@ -550,8 +550,11 @@ a.OLSKCommonButton {
 
 .OLSKCommonFeatureCard {
 	margin: 1em 0;
+
+	font-size: 10.5pt;
 }
 
 .OLSKCommonFeatureCard > :last-child > :nth-child(1) {
-	font-size: 14pt;
+	font-family: unset;
+	font-size: 13pt;
 }
