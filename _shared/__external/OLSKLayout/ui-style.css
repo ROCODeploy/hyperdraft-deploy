@@ -398,17 +398,19 @@
 .OLSKCommon {
 	padding: var(--OLSKCommonContainerPadding);
 
-	max-width: var(--OLSKCommonContainerMaxWidth);
-
-	margin: auto;
-
 	background: var(--OLSKCommonBackground);
 	font-family: var(--OLSKCommonFontFamily);
 	font-size: var(--OLSKCommonFontSize);
 	color: var(--OLSKCommonForeground);
 }
 
-.OLSKCommonBorderContainer {
+.OLSKCommonCapped {
+	max-width: var(--OLSKCommonContainerMaxWidth);
+
+	margin: auto;
+}
+
+.OLSKCommonBordered {
 	padding: 20px 20px;
 	border: var(--OLSKCommonBorder);
 	border-top: none;
@@ -416,7 +418,7 @@
 }
 
 @media (max-width: 450px) {
-	.OLSKCommonBorderContainer {
+	.OLSKCommonBordered {
 		border: none;
 	}
 }
@@ -512,13 +514,13 @@ a.OLSKCommonButton {
 /* OLSKCommonCard */
 
 .OLSKCommonCard {
-
 	display: flex;
 	align-items: center;
 }
 
 .OLSKCommonCard > img {
 	--OLSKCommonCardImageSize: 70px;
+
 	width: var(--OLSKCommonCardImageSize);
 	min-width: var(--OLSKCommonCardImageSize);
 
@@ -529,20 +531,20 @@ a.OLSKCommonButton {
 	display: block;
 	
 	font-weight: bold;
-	font-family: var(--OLSKCommonHeadingFontFamily);
 }
 
-/* OLSKCommonIdentityCard */
+/* OLSKCommonCrownCard */
 
-.OLSKCommonIdentityCard {
+.OLSKCommonCrownCard {
 	margin: 2em 0;
 }
 
-.OLSKCommonIdentityCard > :last-child > :nth-child(1) {
+.OLSKCommonCrownCard > :last-child > :nth-child(1) {
+	font-family: var(--OLSKCommonHeadingFontFamily);
 	font-size: 24pt;
 }
 
-.OLSKCommonIdentityCard > :last-child > :nth-child(2) {
+.OLSKCommonCrownCard > :last-child > :nth-child(2) {
 	font-style: oblique;
 }
 
@@ -550,11 +552,18 @@ a.OLSKCommonButton {
 
 .OLSKCommonFeatureCard {
 	margin: 1em 0;
+}
 
-	font-size: 10.5pt;
+.OLSKCommonFeatureCard > img {
+	--OLSKCommonCardImageSize: 54px;
 }
 
 .OLSKCommonFeatureCard > :last-child > :nth-child(1) {
 	font-family: unset;
-	font-size: 13pt;
+}
+
+/* OLSKCommonWhatIsIt */
+
+.OLSKCommonWhatIsIt {	
+	font-weight: bold;
 }
