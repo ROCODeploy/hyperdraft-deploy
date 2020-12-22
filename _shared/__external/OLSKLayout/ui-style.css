@@ -431,6 +431,8 @@
 	padding-bottom: 2px;
 	border-bottom: 1px solid var(--OLSKCommonForeground);
 
+	margin-top: 40px;
+
 	font-size: 18pt;
 }
 
@@ -484,6 +486,32 @@ a.OLSKCommonButton {
 	border-color: #800002;
 	background: #ffefef;
 	color: #800002;
+}
+
+.OLSKCommon table {
+	width: 100%;
+
+	margin: 20px 0;
+}
+
+.OLSKCommon table tr td {
+	padding: 3px 0;
+	border-top: var(--OLSKCommonEdgeBorder);
+}
+
+.OLSKCommonNotice {
+	padding: 10px;
+	border: 1px solid var(--OLSKCommonForeground);
+	
+	margin: 20px 0;
+}
+
+.OLSKCommonNotice p:first-child {
+	margin-top: 0;
+}
+
+.OLSKCommonNotice p:last-child {
+	margin-bottom: 0;
 }
 
 .OLSKCommonAlert {
