@@ -166,6 +166,9 @@
 	/* OLSKToolbarFlexbox:Parent */
 	display: flex; 
 	align-items: center;
+
+	/* Vimeo hotfix */
+	z-index: 1;
 }
 
 @media screen and (max-width: 760px) {
