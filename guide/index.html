@@ -49,7 +49,7 @@
 <p>If the editor has <em>the focus</em>, the selected note will be highlighted in grey, the search box will have no border, and the editor will show a blinking cursor.</p>
 <p>Try alternating between the two with the <code>Tab</code> key.</p>
 <h2 id="notes-list">Notes list</h2>
-<p>All your notes are listed here. When it has <em>the focus</em>, you can press the <code>Up</code> or <code>Down</code> key to select the previous or next note. Type text in the search box to filter notes that have the exact text, and press <code>Enter</code> to create a new note with the search text. Click a note to select it and focus the editor.</p>
+<p>All your notes are listed here. Type text in the search box to filter notes that match the exact text. Click a note to select it and focus the editor.</p>
 <h2 id="editor">Editor</h2>
 <p>This is a <em>plaintext</em> editor, which means there is no formatting, no images, no special magic – literally just plain simple text. What you type is exactly what is saved, and there is nothing there that you cannot see.</p>
 <h1 id="writing">Writing</h1>
@@ -103,9 +103,9 @@
 <h2 id="links">Links</h2>
 <p>There are a few different ways to link:</p>
 <ul>
-<li><code>[[alfa]]</code> internal link</li>
-<li><code>[alfa](bravo)</code> internal link with alternate text</li>
-<li><code>[charlie](https://example.com)</code> external link</li>
+<li><code>[[apples are crunchy]]</code> internal link</li>
+<li><code>[crunchy fruits](apples are crunchy)</code> internal link with alternate text</li>
+<li><code>[essay about fruits](https://example.com)</code> external link</li>
 </ul>
 <h1 id="publishing">Publishing</h1>
 <p>Connect your <em>storage</em> to make notes accessible to the public Internet. Simply press the <code>Publish</code> button and a shareable link will appear. In the same location, press the <code>Retract</code> button to remove public access.</p>
@@ -150,6 +150,10 @@
 <td><code>Up</code> or <code>Down</code></td>
 </tr>
 <tr>
+<td align="left">Create note from filter text, if filter field is focused</td>
+<td><code>Enter</code></td>
+</tr>
+<tr>
 <td align="left">Clear filter text and selected note, focus filter field</td>
 <td><code>Escape</code></td>
 </tr>
@@ -172,6 +176,10 @@
 <tr>
 <td align="left">Clear filter text and selected note, focus filter field</td>
 <td><code>Escape</code></td>
+</tr>
+<tr>
+<td align="left">Open link under cursor</td>
+<td><code>Cmd+Enter</code> or <code>Ctrl+Enter</code></td>
 </tr>
 </tbody></table>
 <table>
@@ -213,7 +221,7 @@
 <h1 id="add-to-home-screen-on-mobile-and-tablet-devices">Add to Home screen on mobile and tablet devices</h1>
 <p>This web app can be &#39;installed&#39; and used as if it were a native mobile app (with an icon, working without internet access, running as a standalone app outside of the browser).</p>
 <ol>
-<li><a href="/KVCReviewRoute">Open the app</a> in your browser, then follow the steps based on your operating system:</li>
+<li><a href="/write">Open the app</a> in your browser, then follow the steps based on your operating system:</li>
 </ol>
 <h2 id="ios--safari">iOS + Safari</h2>
 <ol start="2">
