@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /$
 Allow: /en/
+Allow: /fr/
+Allow: /es/
 Disallow: /
