@@ -361,12 +361,8 @@
 	margin: auto;
 }
 
-@media screen and (min-width: 760px) {
-
-	.OLSKDecorCapped {
-		padding-top: 0;
-	}
-
+.OLSKDecorNoTopPad {
+	padding-top: 0;
 }
 
 .OLSKDecorOutline {
@@ -498,6 +494,14 @@ a.OLSKDecorPress {
 	color: var(--OLSKCodeForeground);
 }
 
+/* OLSKDecorTitle */
+
+.OLSKDecorTitle {
+	font-weight: bold;
+	font-family: var(--OLSKCommonHeadingFontFamily);
+	font-size: calc(var(--OLSKCommonFontSize) * 2);
+}
+
 /* OLSKDecorNotice */
 
 .OLSKDecorNotice {
@@ -519,6 +523,49 @@ a.OLSKDecorPress {
 	padding: var(--OLSKCommonContainerPadding);
 
 	background: var(--OLSKAlertColor);
+}
+
+/* OLSKDecorCompareTable */
+
+.OLSKDecorCompareTable th, .OLSKDecorCompareTable td {
+	padding: 10px !important;
+	vertical-align: top;
+}
+
+.OLSKDecorCompareTable td:first-child {
+	width: 45%;
+}
+
+.OLSKDecorCompareTable td:not(:first-child) {
+	text-align: center;
+}
+
+.OLSKDecorCompareTable tr:nth-child(2n) {
+	background: hsl(0, 0%, 95%);
+}
+
+.OLSKDecorCompareTable small {
+	display: block;
+
+	margin-top: 8px;
+}
+
+/* OLSKDecorAction */
+
+.OLSKDecorAction {
+	text-align: center;
+	background: #ddd !important;
+	border: none !important;
+}
+
+.OLSKDecorAction :first-child {
+	display: block;
+	
+	font-size: calc(var(--OLSKCommonFontSize) * 2.5);
+}
+
+.OLSKDecorAction * {
+	margin: 10px !important;
 }
 
 /* OLSKCommonTie */
