@@ -410,6 +410,15 @@ body {
 	padding-left: 30px;
 }
 
+.OLSKDecor img:not(* img) {
+	max-width: calc(100% - var(--OLSKDecorPadding) * 2);
+
+	border: var(--OLSKDecorBorder);
+	border-width: var(--OLSKDecorPadding);
+	border-color: var(--OLSKDecorForegroundLight);
+	border-radius: var(--OLSKBorderRadius);
+}
+
 .OLSKDecor blockquote {
 	margin-left: 0;
 	padding-left: var(--OLSKDecorPadding);
@@ -437,6 +446,7 @@ body {
 .OLSKDecor table tr td {
 	padding: var(--OLSKSharedPadding);
 	border-top: var(--OLSKDecorBorder);
+	border-color: var(--OLSKDecorForegroundLight);
 }
 
 /* form */
@@ -697,7 +707,7 @@ a.OLSKDecorPress {
 	--OLSKCommonVideoHigh: 1334;
 	
 	padding-top: calc(((var(--OLSKCommonVideoHigh) + var(--OLSKCommonVideoBorderWidth) * var(--OLSKCommonVideoBorderWidth)) / (var(--OLSKCommonVideoWide) + var(--OLSKCommonVideoBorderWidth) * var(--OLSKCommonVideoBorderWidth))) * 100.00%);
-	border: calc(var(--OLSKCommonVideoBorderWidth) * 1px) var(--OLSKDecorBorderColor) solid;
+	border: calc(var(--OLSKCommonVideoBorderWidth) * 1px) var(--OLSKDecorForegroundLight) solid;
 	border-radius: var(--OLSKBorderRadius);
 
   position: relative;
@@ -717,7 +727,7 @@ a.OLSKDecorPress {
 
 /* OLSKDecorFormBlend */
 
-.OLSKDecorFormBlend input, .OLSKDecorFormBlend button, .OLSKDecorFormBlend .OLSKDecorPress, .OLSKDecorFormBlend input[type="submit"], .OLSKDecorFormBlend textarea, .OLSKDecorFormBlend .OLSKDecorInput {	
+.OLSKDecorFormBlend input, .OLSKDecorFormBlend button:not(.OLSKDecorButtonNoStyle), .OLSKDecorFormBlend .OLSKDecorPress, .OLSKDecorFormBlend input[type="submit"], .OLSKDecorFormBlend textarea, .OLSKDecorFormBlend .OLSKDecorInput {	
 	border: var(--OLSKDecorFormBlendBorder);
 	
 	background: var(--OLSKDecorFormBlendBackground);
@@ -782,11 +792,6 @@ a.OLSKDecorPress {
 
 .OLSKDecorX * {
  max-width: 100%;
-}
-
-.OLSKDecorX img {
-    border: 5px var(--OLSKCommonInteractiveFill) solid;
-    border-radius: var(--OLSKBorderRadius);
 }
 
 /* OLSKDecorSilentLink */
@@ -1016,4 +1021,32 @@ a.OLSKDecorPress {
 
 .ROCOForum a  {
 	border-color: var(--OLSKDecorModuleForeground) !important;
+}
+
+/* ROCOStandardView */
+
+.ROCOStandardView {
+	display: flex;
+	flex-direction: column;
+}
+
+.ROCOStandardViewHead {
+	/* ROCOStandardViewFlexbox:Child */
+	flex-shrink: 0;
+}
+
+.ROCOStandardViewBody {
+	/* ROCOStandardViewFlexbox:Child */
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 760px) {
+
+	.ROCOStandardViewBody {
+		overflow: auto;
+	}
+
 }
